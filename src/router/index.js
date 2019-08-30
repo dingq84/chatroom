@@ -1,19 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import SettingUp from '../pages/SettingUp/index';
+import NickNameSetting from '../pages/NicknameSetting';
+import './router.scss';
 
-const Routes = () => {
+const Router = () => {
 
   return (
-    <Router>
+    <BrowserRouter>
       <Route
         exact
         path='/'
         component={SettingUp}
       />
-    </Router>
+      <Route
+        path='/nickNameSettings'
+        component={NickNameSetting}
+      />
+    </BrowserRouter>
   )
 };
 
-export default Routes;
+export default Router;
