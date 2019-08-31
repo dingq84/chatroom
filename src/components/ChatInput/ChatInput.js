@@ -1,13 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ChatInput = ({ value, handleChange, name }) => (
-  <label>
-    <span>{name}</span>
+import './ChatInput.scss';
+
+const ChatInput = ({ value, handleChange, name, placeholder }) => (
+  <label className='chatInput'>
+    {
+      name && <span>{name}</span>
+    }
     <input
       type="text"
       value={value}
       onChange={handleChange}
+      placeholder={placeholder}
     />
   </label>
 );
@@ -15,7 +20,8 @@ const ChatInput = ({ value, handleChange, name }) => (
 ChatInput.propTypes = {
   value: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string,
+  placeholder: PropTypes.string
 };
 
 export default ChatInput;

@@ -1,0 +1,30 @@
+.chatroomInfoBar {
+  height: 31px;
+  background: #303030 0% 0% no-repeat padding-box;
+  position: absolute;
+  width: 750px;
+  top: 73%;
+
+  & img {
+    cursor: pointer;
+  }
+
+  & > div {
+    margin-left: auto;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & > span {
+      display: flex;
+      justify-content: center;
+      color: #fff;
+
+      & > h6 {
+        margin-left: 5px;
+      }
+    }
+  }
+}

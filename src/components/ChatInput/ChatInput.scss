@@ -1,0 +1,14 @@
+.chatInput {
+  text-align: center;
+
+  & > input {
+    letter-spacing: 0;
+    color: #6c6c6c;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #6c6c6c;
+    background-color: transparent;
+    text-align: center;
+    caret-color: #fff;
+  }
+}

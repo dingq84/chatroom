@@ -9,4 +9,9 @@ const ChatModal = ({ className, children }) => (
   </div>
 );
 
+ChatModal.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.element
+};
+
 export default ChatModal;
