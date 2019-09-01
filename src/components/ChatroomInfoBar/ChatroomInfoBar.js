@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Wheel from '../../assets/images/Cog wheel silhouette free icon.svg';
 import User from '../../assets/images/User shape free icon.svg';

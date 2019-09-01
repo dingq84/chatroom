@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import ChatroomTab from '../../components/ChatroomTab';
 
-const CancelChatroom = () => {
-  const handleClick = e => {
-    console.log(e.target)
-  }
-
+const CancelChatroom = ({ close, handleClose }) => {
   return (
-    <ChatroomTab
-      name='testtest'
-      handleClick={handleClick}
-    />
+    (!close) ?
+      <ChatroomTab
+        name='testtest'
+        handleClick={handleClose}
+      /> : ''
   );
 };
 

@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import CamcelChatroom from '../../containers/CancelChatroom';
+import CancelChatroom from '../../containers/CancelChatroom';
 import ChatMessages from '../../components/ChatMessages';
 
 import './ChatroomInterface.scss';
 
 const ChatroomInterface = () => {
+  const [close, setClose] = useState(true);
+
+  const handleClose = () => {
+    setClose(!close)
+  };
+
   return (
     <div className="chatroomInterface">
       <div className="chatroomInterface__sidebar">
@@ -13,10 +19,15 @@ const ChatroomInterface = () => {
       </div>
       <div className="chatroomInterface__container">
         <div className="chatroomInterface__container--tabs">
-          <CamcelChatroom />
+          <CancelChatroom
+            close={close}
+            handleClose={handleClose} />
         </div>
         <div className="chatroomInterface__container--body">
-          <ChatMessages />
+          <ChatMessages
+            close={close}
+            handleClose={handleClose}
+          />
         </div>
       </div>
     </div>

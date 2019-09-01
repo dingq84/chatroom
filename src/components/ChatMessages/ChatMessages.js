@@ -1,32 +1,43 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ChatSelectButton from '../ChatSelectButton';
 import SentMessages from '../../containers/SentMessages';
 import CharroomInfoBar from '../ChatroomInfoBar';
-
-import Picture from '../../assets/images/Picture free icon.svg';
-import Paper from '../../assets/images/Paper clip outline free icon.svg';
+import CharSelectButton from '../ChatSelectButton';
+import CreateChatroom from '../../containers/CreateChatroom';
 
 import './ChatMessages.scss';
 
-const ChatMessages = ({ }) => (
+const ChatMessages = ({ close, handleClose }) => (
   <div className="chatMessages">
-    <SentMessages />
-    <CharroomInfoBar />
-    <div className="chatMessages__icons">
-      <img src={Paper} alt="paper" />
-      <img src={Picture} alt="picture" />
-      <ChatSelectButton
-        fontSize='12px'
-        displayName='(ﾟ∀ﾟ)'
-      />
-    </div>
+    {
+      !close ?
+        <>
+          <SentMessages />
+          <CharroomInfoBar />
+        </> :
+        <div className="chatMessages__createChatroom">
+          <div>
+            <h3>ヽ(✿ﾟ▽ﾟ)ノ</h3>
+            <h4>馬上開始你的聊天吧~</h4>
+          </div>
+          <CharSelectButton
+            displayName='隨機一對一配對'
+            fontSize='14px'
+          />
+          <CharSelectButton
+            displayName='隨機進入群組'
+            fontSize='14px'
+          />
+          <CreateChatroom
+            handleClose={handleClose}
+          />
+        </div>
+    }
   </div>
 );
 
 ChatMessages.propTypes = {
-
-};
-
+  close: PropTypes.bool.isRequired
+}
 export default ChatMessages;

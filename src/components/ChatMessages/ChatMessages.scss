@@ -13,8 +13,13 @@
     align-items: center;
     padding: 0 10px;
 
-    & > img {
+    & > img,
+    & > label {
       cursor: pointer;
+    }
+
+    & > input {
+      display: none;
     }
   }
 
@@ -24,5 +29,36 @@
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+
+  &__createChatroom {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > div {
+      color: #707070;
+      margin-bottom: 20px;
+
+      & > h3 {
+        font-size: 20px;
+      }
+
+      & > h4 {
+        font-size: 12px;
+      }
+    }
+
+    & > button {
+      border: 1px solid #707070;
+      margin: 10px 0;
+      width: 170px;
+      padding: 10px;
+    }
   }
 }

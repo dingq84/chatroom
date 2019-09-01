@@ -3,8 +3,14 @@ import PropTypes from 'prop-types';
 
 import './ChatModal.scss';
 
-const ChatModal = ({ className, children }) => (
-  <div className={`${className} modal`}>
+const ChatModal = ({ className = '', height = '250px', children, modalRef }) => (
+  <div
+    className={`${className} modal`}
+    ref={modalRef}
+    style={{
+      height: height
+    }}
+  >
     {children}
   </div>
 );

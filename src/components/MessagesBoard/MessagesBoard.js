@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 
 import './MessagesBoard.scss';
 
-const MessagesBoard = ({ messages }) => (
-  <div className="messagesBoard">
-    {messages}
+const MessagesBoard = ({ messagesRef }) => (
+  <div
+    className="messagesBoard"
+    ref={messagesRef}
+  >
   </div>
 );
 
