@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chatroom/static/css/main.ccfd26dd.chunk.css",
+    "main.js": "/chatroom/static/js/main.124c65b1.chunk.js",
+    "main.js.map": "/chatroom/static/js/main.124c65b1.chunk.js.map",
+    "runtime~main.js": "/chatroom/static/js/runtime~main.1722e496.js",
+    "runtime~main.js.map": "/chatroom/static/js/runtime~main.1722e496.js.map",
+    "static/js/2.5425e080.chunk.js": "/chatroom/static/js/2.5425e080.chunk.js",
+    "static/js/2.5425e080.chunk.js.map": "/chatroom/static/js/2.5425e080.chunk.js.map",
+    "index.html": "/chatroom/index.html",
+    "precache-manifest.e94b33f4ee3f1aac3ea3e3e8efa51145.js": "/chatroom/precache-manifest.e94b33f4ee3f1aac3ea3e3e8efa51145.js",
+    "service-worker.js": "/chatroom/service-worker.js",
+    "static/css/main.ccfd26dd.chunk.css.map": "/chatroom/static/css/main.ccfd26dd.chunk.css.map",
+    "static/media/Cog wheel silhouette free icon.svg": "/chatroom/static/media/Cog wheel silhouette free icon.dcac8abd.svg",
+    "static/media/Padlock free icon.svg": "/chatroom/static/media/Padlock free icon.8ce327cb.svg",
+    "static/media/Paper clip outline free icon.svg": "/chatroom/static/media/Paper clip outline free icon.f882b8d6.svg",
+    "static/media/Picture free icon.svg": "/chatroom/static/media/Picture free icon.1fcbe430.svg",
+    "static/media/User shape free icon.svg": "/chatroom/static/media/User shape free icon.b96c4c15.svg",
+    "static/media/clear.svg": "/chatroom/static/media/clear.bebd4b5a.svg",
+    "static/media/right-arrow.svg": "/chatroom/static/media/right-arrow.b1a79cf6.svg"
+  }
+}
